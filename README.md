@@ -1,30 +1,58 @@
-# 🚨 BigBlueOnCall
+┌─────────────────────┐
+│     Verification    │
+│                     │
+│ Pod → Running       │
+└─────────────────────┘
+```
 
-### Kubernetes Incident Investigation & SRE Assistant
+Make sure the code block is closed with:
 
-BigBlueOnCall is a Kubernetes/SRE assistant designed to help engineers investigate Kubernetes incidents, understand the root cause, propose remediation, and safely execute approved fixes.
+````markdown
+```
 
-The project follows a **human-in-the-loop remediation model**, where remediation commands are displayed to the operator and require explicit approval before execution.
+**before the images.**
 
----
+### 2. Immediately after that, add:
 
-## 🎯 What is BigBlueOnCall?
+```markdown
+## 📸 Screenshots
 
-During a Kubernetes incident, an SRE often needs to run multiple commands:
+### 🚨 Dashboard
 
-- Check unhealthy pods
-- Inspect pod details
-- Review Kubernetes events
-- Check container logs
-- Identify the root cause
-- Decide on a remediation
-- Execute the fix
-- Verify that the workload recovered
+[Your uploaded dashboard image]
 
-BigBlueOnCall brings these steps into a single workflow.
+### 🔴 Failed Pod Detection
 
----
+[Your uploaded failed-pod image]
 
+### 🔎 Incident Investigation
+
+[Your uploaded investigation image]
+
+### 👤 Human Approval
+
+[Your uploaded approval image]
+
+### ✅ Incident Resolved
+
+[Your uploaded resolved image]
+```
+
+However, since GitHub has already uploaded your images, **don't upload them again**.
+
+When you dragged them into the README, GitHub inserted lines beginning with:
+
+```html
+<img width="1725" height="915" alt="Screenshot ..." src="https://github.com/user-attachments/assets/...">
+```
+
+Those lines are correct.
+
+### 3. The important part
+
+Your README should look structurally like this:
+
+````markdown
 ## 🔄 How It Works
 
 ```text
@@ -34,49 +62,7 @@ BigBlueOnCall brings these steps into a single workflow.
 └──────────┬──────────┘
            │
            ▼
-┌─────────────────────┐
-│   Detect Incident   │
-│                     │
-│ Find unhealthy pods │
-└──────────┬──────────┘
-           │
-           ▼
-┌─────────────────────┐
-│    Investigation    │
-│                     │
-│ • Pod Details       │
-│ • Events            │
-│ • Container Logs    │
-└──────────┬──────────┘
-           │
-           ▼
-┌─────────────────────┐
-│      Diagnosis      │
-│                     │
-│ • Evidence          │
-│ • Root Cause        │
-│ • Contributing      │
-│   Factors           │
-└──────────┬──────────┘
-           │
-           ▼
-┌─────────────────────┐
-│ Remediation Proposal│
-│                     │
-│ Show exact commands │
-└──────────┬──────────┘
-           │
-           ▼
-┌─────────────────────┐
-│ 👤 Human Approval   │
-│                     │
-│ Review & approve    │
-└──────────┬──────────┘
-           │
-           ▼
-┌─────────────────────┐
-│ Execute Remediation │
-└──────────┬──────────┘
+        ...
            │
            ▼
 ┌─────────────────────┐
@@ -84,8 +70,32 @@ BigBlueOnCall brings these steps into a single workflow.
 │                     │
 │ Pod → Running       │
 └─────────────────────┘
-<img width="1725" height="915" alt="Screenshot 2026-09-29 at 10 30 22 PM" src="https://github.com/user-attachments/assets/614f67a2-0e82-403f-bd23-32a3ffc559a3" />
-<img width="1725" height="915" alt="Screenshot 2026-09-29 at 10 30 33 PM" src="https://github.com/user-attachments/assets/007e74b3-6ff6-490a-a55f-8e60f7e896ce" />
-<img width="1725" height="915" alt="Screenshot 2026-09-29 at 10 30 46 PM" src="https://github.com/user-attachments/assets/fc97a4fe-4c5b-4221-be4b-173d00a17ffb" />
-<img width="1725" height="915" alt="Screenshot 2026-09-29 at 10 30 58 PM" src="https://github.com/user-attachments/assets/1f1a78f5-5655-4417-af8d-b00065c136de" />
-<img width="1725" height="915" alt="Screenshot 2026-09-29 at 10 31 10 PM" src="https://github.com/user-attachments/assets/c982a515-712c-456a-9054-7fd1040d6ff2" />
+```
+
+## 📸 Screenshots
+
+### 🚨 Dashboard
+
+<img width="1725" height="915" alt="Screenshot 2026-09-29 at 10 30 22 PM" src="https://github.com/user-attachments/assets/729887c0-a171-4f66-9197-1df370b7280b" />
+
+
+### 🔴 Failed Pod Detection
+
+<img width="1725" height="915" alt="Screenshot 2026-09-29 at 10 30 33 PM" src="https://github.com/user-attachments/assets/6a67f5bc-b4f8-457e-a11a-980633829448" />
+
+
+### 🔎 Incident Investigation
+
+<img width="1725" height="915" alt="Screenshot 2026-09-29 at 10 30 46 PM" src="https://github.com/user-attachments/assets/a5df6755-e798-4912-8498-24c797180068" />
+
+### 👤 Human Approval
+
+<img width="1725" height="915" alt="Screenshot 2026-09-29 at 10 30 58 PM" src="https://github.com/user-attachments/assets/979d078a-9000-4748-8f72-161eaba1f9f8" />
+
+<img width="1725" height="915" alt="Screenshot 2026-09-29 at 10 31 10 PM" src="https://github.com/user-attachments/assets/9ab8e8e2-7acf-44a7-acdc-5fcca9ad4add" />
+
+### ✅ Incident Resolved
+
+<img width="1725" height="915" alt="Screenshot 2026-09-29 at 10 34 35 PM" src="https://github.com/user-attachments/assets/9586e803-6d3f-4b7e-9b93-a8d6ef0cf6bf" />
+<img width="1725" height="915" alt="Screenshot 2026-09-29 at 10 34 47 PM" src="https://github.com/user-attachments/assets/f97d2183-9531-4400-bdcb-b874c43f4720" />
+
