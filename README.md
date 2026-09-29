@@ -5,11 +5,6 @@
 └─────────────────────┘
 ```
 
-Make sure the code block is closed with:
-
-````markdown
-```
-
 **before the images.**
 
 ### 2. Immediately after that, add:
